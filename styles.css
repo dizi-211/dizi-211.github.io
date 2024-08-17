@@ -4,6 +4,13 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .navbar {
     background-color: #333;
     overflow: hidden;
@@ -41,4 +48,36 @@ body {
 }
 .button:hover {
     background-color: #0056b3;
+}
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #888;
+    font-size: 14px;
+}
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+.header p {
+    font-size: 18px;
+    color: #666;
+}
+.content {
+    line-height: 1.6;
+}
+.section {
+    margin-bottom: 30px;
+}
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.section p {
+    font-size: 16px;
+    color: #555;
 }
