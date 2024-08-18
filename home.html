@@ -20,6 +20,39 @@
         <p>欢迎来到我的网站！</p>
     </div>
 
-    <a class="button-link" href="sign.html">登录</a>
+    <a class="button-link" href="javascript:void(0);" onclick="openSettings()">设置</a>
+
+    <!-- 设置页面 -->
+    <div class="overlay" id="overlay"></div>
+    <div class="settings-box" id="settingsBox">
+        <span class="close-btn" onclick="closeSettings()">X</span>
+        <h2>设置</h2>
+        <form>
+            <label for="theme">主题:</label>
+            <select id="theme">
+                <option value="light">明亮</option>
+                <option value="dark">暗黑</option>
+            </select>
+            <button type="button" onclick="saveSettings()">保存</button>
+        </form>
+    </div>
+
+    <script>
+        function openSettings() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('settingsBox').style.display = 'block';
+        }
+
+        function closeSettings() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('settingsBox').style.display = 'none';
+        }
+
+        function saveSettings() {
+            // 保存设置的逻辑
+            alert('设置已保存');
+            setTimeout(closeSettings, 0); // 0秒后自动关闭设置页面
+        }
+    </script>
 </body>
 </html>
