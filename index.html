@@ -39,11 +39,10 @@
     </a>
     <script>
         function openAndClose(url) {
-            // 打开新窗口
+            // 打开新标签页
             var newWindow = window.open(url, '_blank');
-            // 检查新窗口是否成功打开
             if (newWindow) {
-                // 关闭当前窗口
+                // 关闭当前标签页
                 window.close();
             } else {
                 alert('请允许弹出窗口以继续。');
